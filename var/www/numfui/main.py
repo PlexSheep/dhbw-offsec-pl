@@ -1,15 +1,15 @@
 # TODO: make a little flaks service that is somehow offering os-command
 # injection
 
-from flask import Flask, request, render_template_string
+from flask import Flask, request, render_template
 import subprocess
 import os
 
-app = Flask("amazing-time-calculator")
+app = Flask("numfui")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    return "YOU FOOL"
+    return render_template("index.html")
 
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0", port=80)
+    app.run(debug=True, host="0.0.0.0", port=80)

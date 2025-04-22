@@ -10,5 +10,5 @@ COPY home/dave/* /home/dave
 RUN chown www-data:www-data /var/www -R
 USER dave
 EXPOSE 80 22
-# CMD tail -f /dev/null
-CMD ["python3", "/var/www/amazing-time-calculator/main.py"]
+WORKDIR /var/www/numfui
+CMD ["python3", "/var/www/numfui/main.py"]
