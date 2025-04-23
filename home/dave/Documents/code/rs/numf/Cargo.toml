@@ -1,0 +1,22 @@
+[package]
+name = "numf"
+version = "0.4.1"
+edition = "2021"
+publish = true
+authors = ["Christoph J. Scherr <software@cscherr.de>"]
+license = "MIT"
+description = "Convert numbes between formats"
+readme = "README.md"
+homepage = "https://git.cscherr.de/PlexSheep/numf"
+repository = "https://git.cscherr.de/PlexSheep/numf"
+keywords = ["cli", "formatting"]
+categories = ["command-line-utilities", "encoding"]
+
+
+[dependencies]
+anyhow = "1.0.83"
+clap = { version = "4.5.4", features = ["derive"] }
+fast32 = "1.0.2"
+libpt = { version = "0.6.0", features = ["bintols", "log", "cli"] }
+num = "0.4.3"
+rand = "0.8.5"
