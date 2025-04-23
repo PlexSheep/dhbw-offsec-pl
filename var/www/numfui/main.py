@@ -37,6 +37,8 @@ def index():
             cmd = f"/home/dave/.local/bin/numf {form.number.data} {get_format_flag(form.format.data)}"
             logger.info(f"cmd: {cmd}")
             output: str = subprocess.check_output(cmd, shell=True).decode()
+            if form.number.data == "1337":
+                output += "\t\n1337 1z my f4v0R173 NUM83R, S0 k3wl"
             logger.info(f"output: {output}")
         except subprocess.CalledProcessError as e:
             logger.warning(f"The subprocess failed: {e}")
