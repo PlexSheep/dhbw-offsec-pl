@@ -21,7 +21,7 @@ FMT_TO_FLAG = {
 
 def get_format_flag(fmt: str | None) -> str:
     val = FMT_TO_FLAG[fmt.strip()]
-    if val is None: 
+    if val is None:
         raise Exception("Unknown format")
     return val
 
@@ -49,4 +49,4 @@ def index():
     return render_template("index.html", output=output)
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=80)
+    app.run(debug=False, host="0.0.0.0", port=80)
