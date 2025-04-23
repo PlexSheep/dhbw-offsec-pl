@@ -1,6 +1,5 @@
 #!/bin/bash
 EXPORT_DIR=challenge
-VERSION=0.1.0
 DOCKER_IMG=numfui-${VERSION}-docker.tar
 
 set -e
