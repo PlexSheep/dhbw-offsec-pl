@@ -54,13 +54,13 @@ The application will be available at: `http://localhost:8080`
 
 <details>
 <summary>Hint 1: Web Vulnerability</summary>
-Look carefully at the way you input numbers. Perhaps you can somehow send 
+Look carefully at the way you input numbers. Perhaps you can somehow send
 non-numbers to the webservice?
 </details>
 
 <details>
 <summary>Hint 2: Getting Access</summary>
-The Webform number field is vulnerable to os-command injection. Play around with 
+The Webform number field is vulnerable to os-command injection. Play around with
 it a bit and use urlencoding where needed.
 </details>
 
@@ -81,7 +81,7 @@ Check the web application code for any special values or preferences Dave might 
 
 <details>
 <summary>Hint 6: Bruteforce</summary>
-Reverse engineering this rust application seems tedious. Try brute forcing the 
+Reverse engineering this rust application seems tedious. Try brute forcing the
 parameters, and keep his favorite number in mind.
 </details>
 
@@ -101,7 +101,7 @@ This CTF is meant for educational purposes only. The techniques demonstrated sho
 
 ## 🏆 Flag Format
 
-The flag is in the format: `FLAG{random_string}` (a bit obfuscated, you will 
+The flag is in the format: `FLAG{random_string}` (a bit obfuscated, you will
 recognize it when you see it)
 
 Good luck and happy hacking!

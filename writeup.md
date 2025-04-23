@@ -1,7 +1,12 @@
 ## Getting started
 
 ```bash
-$ docker compose up
+docker compose up
+# or if you only got the docker image
+gzip -d numfui-VERSION-docker.tar.gz
+docker load -i numfui-VERSION-docker.tar
+docker run -dp 127.0.0.1:8000:80 numfui:VERSION
+# the webservice will be available on http://localhost:8000
 ```
 
 ## Evaluation
