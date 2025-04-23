@@ -10,6 +10,6 @@ COPY home/dave/* /home/dave
 COPY home/dave/.local /home/dave/.local
 RUN chown www-data:www-data /var/www -R
 USER dave
-EXPOSE 80 22
+EXPOSE 80
 WORKDIR /var/www/numfui
 CMD ["python3", "/var/www/numfui/main.py"]
